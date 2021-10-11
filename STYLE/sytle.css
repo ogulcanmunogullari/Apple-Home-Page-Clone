@@ -1,0 +1,901 @@
+*, p, h1, h2, h3, h4, h5, h6, a, li, ul {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-text-decoration-style: none;
+          text-decoration-style: none;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+  .mobile-menu .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 48px;
+  }
+  .mobile-menu .header .mega-menu-close, .mobile-menu .header .mega-menu-open {
+    margin: 15px 20px;
+    position: relative;
+    height: 20px;
+    width: 20px;
+    z-index: 1;
+  }
+  .mobile-menu .header .mega-menu-close .first, .mobile-menu .header .mega-menu-open .first {
+    position: absolute;
+    top: -5px;
+    left: 5px;
+    display: inline-block;
+    font-size: 24px;
+  }
+  .mobile-menu .header .mega-menu-close .second, .mobile-menu .header .mega-menu-open .second {
+    top: -5px;
+    left: 5px;
+    position: absolute;
+    display: inline-block;
+    font-size: 24px;
+  }
+  .mobile-menu .mega-menu {
+    z-index: -98;
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+    color: #CCCCCC;
+  }
+  .mobile-menu .mega-menu header {
+    border-bottom: 2px solid #424245;
+  }
+  .mobile-menu .mega-menu header .menu-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    background-image: url(https://www.apple.com/ac/globalnav/6/tr_TR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__cxwwnrj0urau_small.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px;
+    -webkit-transform: translateX(-38px);
+            transform: translateX(-38px);
+  }
+  .mobile-menu .mega-menu header .first {
+    -webkit-transform: rotate(-60deg);
+            transform: rotate(-60deg);
+  }
+  .mobile-menu .mega-menu header .second {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+  .mobile-menu .mega-menu header .search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 53px;
+    padding: 0 10px;
+  }
+  .mobile-menu .mega-menu header .search input {
+    width: 100%;
+    height: 36px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #1D1D1F;
+    padding: 0 30px;
+  }
+  .mobile-menu .mega-menu header .search input::-webkit-input-placeholder {
+    color: #949393;
+    font-size: 18px;
+    background-image: url(https://www.apple.com/ac/globalnav/6/tr_TR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_search_image__fca9mfoh8a2q_small.svg);
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position: 7px center;
+  }
+  .mobile-menu .mega-menu header .search input:-ms-input-placeholder {
+    color: #949393;
+    font-size: 18px;
+    background-image: url(https://www.apple.com/ac/globalnav/6/tr_TR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_search_image__fca9mfoh8a2q_small.svg);
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position: 7px center;
+  }
+  .mobile-menu .mega-menu header .search input::-ms-input-placeholder {
+    color: #949393;
+    font-size: 18px;
+    background-image: url(https://www.apple.com/ac/globalnav/6/tr_TR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_search_image__fca9mfoh8a2q_small.svg);
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position: 7px center;
+  }
+  .mobile-menu .mega-menu header .search input::placeholder {
+    color: #949393;
+    font-size: 18px;
+    background-image: url(https://www.apple.com/ac/globalnav/6/tr_TR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_search_image__fca9mfoh8a2q_small.svg);
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position: 7px center;
+  }
+  .mobile-menu .mega-menu main div ul {
+    padding: 10px 40px;
+  }
+  .mobile-menu .mega-menu main div ul li {
+    border-bottom: 2px solid #424245;
+    height: 44px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mobile-menu .mega-menu main div ul li:first-child {
+    border-top: none;
+  }
+  .mobile-menu .mega-menu main div ul li:last-child {
+    border-bottom: none;
+  }
+  .mobile-menu .mega-menu main div ul li a {
+    font-size: 17px;
+    line-height: 1.23536;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    color: #f5f5f7;
+  }
+  .mobile-menu .menu {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    background-color: #333333;
+    width: 100%;
+    color: #CCCCCC;
+    z-index: 99;
+  }
+  .mobile-menu .menu .header .mega-menu-open {
+    z-index: 1;
+  }
+  .mobile-menu .menu .header .mega-menu-open .first {
+    top: -33px;
+    left: 0;
+    font-size: 36px;
+  }
+  .mobile-menu .menu .header .mega-menu-open .second {
+    top: -26px;
+    left: 0;
+    font-size: 36px;
+  }
+  .mobile-menu .menu .header .shop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    background-image: url(https://www.apple.com/ac/globalnav/6/tr_TR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_bag_image__bmix8075eg4i_small.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 18px;
+    -webkit-transform: translateX(-22px);
+            transform: translateX(-22px);
+  }
+  .mobile-menu .menu .header .menu-logo {
+    background-image: url(https://www.apple.com/ac/globalnav/6/tr_TR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__cxwwnrj0urau_small.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 18px;
+    -webkit-transform: translateX(-23px);
+            transform: translateX(-23px);
+  }
+  .mobile-menu .add-display {
+    top: -950px;
+    position: absolute;
+    overflow: hidden;
+  }
+  .mobile-menu .transition {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .pc-menu {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+  .pc-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #000000ee;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 44px;
+  }
+  .pc-menu a {
+    color: #CCCCCC;
+  }
+  .pc-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 768px;
+  }
+  .pc-menu ul:first-child {
+    padding-left: 16px;
+  }
+  .pc-menu ul:last-child {
+    padding-right: 24px;
+  }
+  .pc-menu .pc-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .pc-menu .pc-logo svg {
+    background-image: url(https://www.apple.com/ac/globalnav/6/tr_TR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__cxwwnrj0urau_small.svg);
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: center center;
+    width: 18px;
+    height: 44px;
+    z-index: 99;
+  }
+  .pc-menu .search-icon svg {
+    background-image: url(https://www.apple.com/ac/globalnav/6/en_US/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_search_image__fca9mfoh8a2q_large.svg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 18px;
+    width: 18px;
+    height: 40px;
+  }
+  .pc-menu .shop-a svg {
+    background-image: url(https://www.apple.com/ac/globalnav/6/tr_TR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_bag_image__bmix8075eg4i_small.svg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 18px;
+    width: 18px;
+    height: 44px;
+  }
+  .search-menu {
+    top: 0;
+    width: 100%;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #000000;
+  }
+  .search-menu div {
+    position: relative;
+  }
+  .search-menu div span {
+    position: absolute;
+    color: white;
+    top: 30%;
+  }
+  .search-menu input {
+    width: 45vw;
+    height: 44px;
+    border: 0;
+    background-color: #000000ee;
+    padding: 0 30px;
+  }
+  .search-menu input::-webkit-input-placeholder {
+    color: white;
+    font-size: 18px;
+    background-image: url(https://www.apple.com/ac/globalnav/6/tr_TR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_search_image__fca9mfoh8a2q_small.svg);
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: 7px center;
+  }
+  .search-menu input:-ms-input-placeholder {
+    color: white;
+    font-size: 18px;
+    background-image: url(https://www.apple.com/ac/globalnav/6/tr_TR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_search_image__fca9mfoh8a2q_small.svg);
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: 7px center;
+  }
+  .search-menu input::-ms-input-placeholder {
+    color: white;
+    font-size: 18px;
+    background-image: url(https://www.apple.com/ac/globalnav/6/tr_TR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_search_image__fca9mfoh8a2q_small.svg);
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: 7px center;
+  }
+  .search-menu input::placeholder {
+    color: white;
+    font-size: 18px;
+    background-image: url(https://www.apple.com/ac/globalnav/6/tr_TR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_search_image__fca9mfoh8a2q_small.svg);
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: 7px center;
+  }
+  .add-search {
+    right: -100vw;
+  }
+  .transition {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  main .iphone13pro {
+    height: 68.4vh;
+  }
+  main .iphone13pro h1 {
+    font-size: 56px;
+    font-weight: 600;
+    letter-spacing: -2px;
+    margin-top: 10px;
+  }
+  main .iphone13pro h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 1px;
+    letter-spacing: -2px;
+  }
+  main .iphone13pro span {
+    margin-top: 24px;
+    font-size: 18px;
+    color: #86868B;
+  }
+  main .iphone13pro .cta {
+    height: 85%;
+  }
+  main .iphone13pro .cta-link {
+    margin: 16px 0;
+    padding: 0 45px;
+  }
+  main .iphone13pro .cta-link a {
+    font-size: 20px;
+    font-weight: 500;
+    color: #0066CC !important;
+  }
+  main .iphone13pro .cta-link a:hover {
+    text-decoration: underline;
+  }
+  main .iphone13 {
+    height: 68.4vh;
+  }
+  main .iphone13 h1 {
+    color: #F5F5F7;
+    font-size: 56px;
+    font-weight: 600;
+    letter-spacing: -2px;
+    margin-top: 10px;
+  }
+  main .iphone13 h2 {
+    color: #FEC2EB;
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 1px;
+    letter-spacing: -.5px;
+  }
+  main .iphone13 span {
+    margin-top: 24px;
+    font-size: 18px;
+    color: #86868B;
+  }
+  main .iphone13 .cta {
+    height: 85%;
+  }
+  main .iphone13 .cta-link {
+    margin-top: 16px;
+  }
+  main .iphone13 .cta-link a {
+    font-size: 20px;
+    font-weight: 500;
+    color: #2997FF !important;
+  }
+  main .iphone13 .cta-link a:hover {
+    text-decoration: underline;
+  }
+  main .applewatch {
+    height: 68.4vh;
+  }
+  main .applewatch h2 {
+    margin-top: 20px;
+    font-size: 26px;
+    font-weight: 500;
+  }
+  main .applewatch span {
+    margin-top: 24px;
+    font-size: 18px;
+    color: #86868B;
+  }
+  main .applewatch .cta {
+    height: 85%;
+  }
+  main .applewatch .cta-link {
+    margin-top: 16px;
+  }
+  main .applewatch .cta-link a {
+    font-size: 20px;
+    font-weight: 500;
+    color: #0066CC;
+  }
+  main .applewatch .cta-link a:hover {
+    text-decoration: underline;
+  }
+  main .promos {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "fitness ipad" "imac airtag" "card tv";
+    grid-gap: 12px;
+    margin: 12px;
+  }
+  main .promos img {
+    width: 15vh;
+    margin-bottom: 10px;
+  }
+  main .promos .cta h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  main .promos .cta-link {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-top: 10px;
+  }
+  main .promos .cta-group h2 {
+    font-size: 2vh;
+    font-weight: 100 !important;
+    letter-spacing: .5px;
+  }
+  main .promos .cta-group sup {
+    font-size: 1.3vh;
+  }
+  main .promos .fitness {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: fitness;
+    height: 51.5vh;
+  }
+  main .promos .ipadMini {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: ipad;
+    height: 51.5vh;
+  }
+  main .promos .iMac {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: imac;
+    height: 51.5vh;
+  }
+  main .promos .airTag {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: airtag;
+    height: 51.5vh;
+  }
+  main .promos .airTag img {
+    width: 10vh;
+  }
+  main .promos .card {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: card;
+    height: 51.5vh;
+  }
+  main .promos .card img {
+    width: 10vh;
+  }
+  main .promos .tv {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: tv;
+    height: 51.5vh;
+  }
+  main .promos .tv .cta img {
+    width: 8vh;
+  }
+  main .promos .tv .cta-group img {
+    width: 20vh;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .pc-menu ul {
+    width: 1024px;
+  }
+  main .iphone13pro {
+    height: 77.5vh !important;
+  }
+  main .iphone13 {
+    height: 77.5vh !important;
+  }
+  main .applewatch {
+    height: 77.5vh !important;
+  }
+  main .promos a {
+    font-size: 16px;
+  }
+  main .promos .fitness {
+    height: 62vh !important;
+  }
+  main .promos .fitness img {
+    width: 20vh;
+  }
+  main .promos .fitness .cta-link {
+    padding: 0 30px;
+  }
+  main .promos .ipadMini {
+    height: 62vh !important;
+  }
+  main .promos .iMac {
+    height: 62vh !important;
+  }
+  main .promos .iMac h1 {
+    font-size: 40px;
+  }
+  main .promos .iMac .cta-link a {
+    margin: 10px;
+  }
+  main .promos .airTag {
+    height: 62vh !important;
+  }
+  main .promos .airTag img {
+    width: 13vh;
+  }
+  main .promos .card {
+    height: 62vh !important;
+  }
+  main .promos .card img {
+    width: 13vh;
+  }
+  main .promos .tv {
+    height: 62vh !important;
+  }
+}
+
+.cta {
+  overflow: hidden;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.cta h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.cta .logo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.cta .cta-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cta .cta-group span {
+  text-align: center;
+}
+
+.cta .cta-group h2 {
+  font-size: 2vh;
+  font-weight: 100 !important;
+  letter-spacing: .5px;
+}
+
+.cta .cta-group sup {
+  font-size: 1.3vh;
+}
+
+.cta .cta-group .cta-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-top: 10px;
+  gap: 80px;
+}
+
+.cta .cta-group .cta-link a {
+  color: #0066CC;
+}
+
+.cta .cta-group .cta-link a:hover {
+  text-decoration: underline;
+}
+
+main {
+  overflow: hidden;
+}
+
+main .reklam {
+  height: 148px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: gray;
+  overflow: hidden;
+}
+
+main .iphone13pro {
+  height: 512px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../../img/iphone13-pc.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .iphone13 {
+  margin-top: 16px;
+  height: 512px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../../img/iphone13-pc-2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .applewatch {
+  margin-top: 16px;
+  height: 512px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../../img/apple-watch-pc.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .promos {
+  display: -ms-grid;
+  display: grid;
+  grid-template: 1fr;
+}
+
+main .promos .fitness {
+  height: 500px;
+  background-image: url(../../img/apple-fitness-large.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .promos .fitness img {
+  width: 150px;
+}
+
+main .promos .ipadMini {
+  height: 500px;
+  background-image: url(../../img/apple-ipad-mini-large.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .promos .ipadMini img {
+  width: 100px;
+}
+
+main .promos .iMac {
+  height: 500px;
+  background-image: url(../../img/apple-imac-large.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .promos .iMac h1 {
+  font-size: 32px;
+}
+
+main .promos .airTag {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../../img/apple-airtag-large.jpg);
+}
+
+main .promos .airTag img {
+  width: 100px;
+}
+
+main .promos .card {
+  height: 500px;
+  background-image: url(../../img/apple-card-large.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .promos .card img {
+  width: 100px;
+}
+
+main .promos .tv {
+  height: 500px;
+  background-image: url(../../img/apple-space-large.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .promos .tv img {
+  width: 70px;
+}
+
+main .promos .tv .cta {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 80%;
+}
+
+main .promos .tv .cta-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .promos .tv .cta-group img {
+  width: 170px;
+}
+
+main .promos .tv h2 {
+  color: white;
+}
+
+.mobile-menu, .pc-menu {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+/*# sourceMappingURL=sytle.css.map */

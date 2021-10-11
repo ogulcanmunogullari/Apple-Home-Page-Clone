@@ -1,0 +1,211 @@
+
+.cta
+{
+    overflow: hidden;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h1
+    {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .logo
+    {
+        align-self: center;
+    }
+    .cta-group
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        span
+            {
+                text-align: center;
+            }
+        h2
+        {
+            font-size: 2vh;
+            font-weight: 100 !important;
+            letter-spacing: .5px;    
+        }
+        sup
+        {
+            font-size: 1.3vh;
+        }
+        .cta-link
+        {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            margin-top: 10px;
+            gap: 80px;
+            a
+            {
+                color: #0066CC;
+                &:hover
+                {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+main
+{
+    overflow: hidden;
+    .reklam{
+        height: 148px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: gray;
+        overflow: hidden;
+
+    }
+    .iphone13pro
+    {
+        height: 512px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../../img/iphone13-pc.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .iphone13
+    {
+        margin-top: 16px;
+        height: 512px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../../img/iphone13-pc-2.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .applewatch
+    {
+        margin-top: 16px;
+        height: 512px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../../img/apple-watch-pc.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .promos
+    {
+        display: grid;
+        grid-template: 1fr;
+        .fitness
+        {
+            img{
+                width: 150px
+            }
+            height: 500px;
+            background-image: url(../../img/apple-fitness-large.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ipadMini
+        {
+            img{
+                width: 100px
+            }
+            height: 500px;
+            background-image: url(../../img/apple-ipad-mini-large.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .iMac
+        {
+            h1{
+                font-size: 32px;
+            }
+            height: 500px;
+            background-image: url(../../img/apple-imac-large.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .airTag
+        {
+            img{
+                width: 100px
+            }
+            height: 500px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(../../img/apple-airtag-large.jpg);
+        }
+        .card
+        {
+            img{
+                width: 100px
+            }
+            height: 500px;
+            background-image: url(../../img/apple-card-large.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .tv
+        {
+            img{
+                width: 70px
+            }
+            height: 500px;
+            background-image: url(../../img/apple-space-large.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .cta
+            {
+                justify-content: space-between;
+                height: 80%;
+            }
+            .cta-group
+            {
+                display: flex;
+                align-items: center;
+                img{
+                    width: 170px
+                }
+            }
+            h2
+            {
+                color: white;
+            }
+        }
+            
+    }
+}

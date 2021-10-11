@@ -1,0 +1,637 @@
+//Phone
+@media only screen and (max-width: 767px){
+.mobile-menu{
+    
+    // L O G O
+    .header
+    {
+        
+        display: flex;
+        height: 48px;
+        .mega-menu-close, .mega-menu-open
+        {
+            
+            margin: 15px 20px;
+            position: relative;
+            height: 20px;
+            width: 20px;
+            z-index: 1;
+            .first
+            {
+            position: absolute;
+            top: -5px;
+            left: 5px;
+            display: inline-block;
+            font-size: 24px;
+            
+            }
+            .second
+            {
+            top: -5px;
+            left: 5px;
+            position: absolute;
+            display: inline-block;
+            font-size: 24px;
+            
+            }
+        }
+    }
+    // M E G A    M E N U    S T A R T
+    .mega-menu
+    {   
+        z-index: -98;
+        position: absolute;
+        top: 0;
+        opacity: 1;
+        height: 100vh;
+        width: 100vw;
+        background-color: #000000;
+        color: #CCCCCC;
+        header
+        {
+            border-bottom: 2px solid#424245;
+            .menu-logo
+                {
+                    display: flex;
+                    justify-content: center;
+                    flex-grow: 2;
+                    background-image: url(https://www.apple.com/ac/globalnav/6/tr_TR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__cxwwnrj0urau_small.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;                    background-size: 18px;
+                    transform: translateX(-38px);
+                }
+            .first{
+                transform: rotate(-60deg);
+            }
+            .second{
+                transform: rotate(25deg);
+            }
+            .search
+            {
+                display: flex;
+                justify-content: center;
+                height: 53px;
+                padding: 0 10px;
+                input
+                {
+                    width: 100%;
+                    height: 36px;
+                    border-radius: 10px;
+                    border: 0;
+                    background-color: #1D1D1F;
+                    padding: 0 30px;
+                    &::placeholder
+                    {
+
+                        color: #949393;
+                        font-size: 18px;
+                        background-image: url(https://www.apple.com/ac/globalnav/6/tr_TR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_search_image__fca9mfoh8a2q_small.svg);
+                        background-repeat: no-repeat;
+                        background-size: 14px;
+                        background-position: 7px center;
+                    }
+                }
+            }
+        }   
+        main
+        {
+            div
+            {
+                ul
+                {
+                    padding: 10px 40px;
+                    li
+                    {
+                        border-bottom: 2px solid#424245;
+                        height: 44px;
+                        display: flex;
+                        align-items: center;
+                        &:first-child
+                        {
+                            border-top: none;
+                        }
+                        &:last-child
+                        {
+                            border-bottom: none;
+                        }
+                        a
+                        {
+                            font-size: 17px;
+                            line-height: 1.23536;
+                            font-weight: 400;
+                            letter-spacing: -.022em;
+                            color: #f5f5f7;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // M E G A    M E N U   E N D
+
+    // M E N U    S T A R T
+    .menu{
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        background-color: #333333;
+        width: 100%;
+        color: #CCCCCC;
+        z-index: 99;
+        .header
+        {
+            .mega-menu-open
+            {
+            z-index: 1;
+                .first
+                {
+                    top: -33px;
+                    left: 0;
+                    font-size: 36px;
+                }
+                .second
+                {
+                    top: -26px;
+                    left: 0;
+                    font-size: 36px;
+                }
+            
+            }
+            .shop
+            {   
+                
+                display: flex;
+                justify-content: center;
+                flex-grow: 2;
+                background-image: url(https://www.apple.com/ac/globalnav/6/tr_TR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_bag_image__bmix8075eg4i_small.svg);
+                background-repeat: no-repeat;
+                background-position: right; 
+                background-size: 18px;
+                transform: translateX(-22px);
+                
+            }
+            .menu-logo
+            {
+                
+                background-image: url(https://www.apple.com/ac/globalnav/6/tr_TR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__cxwwnrj0urau_small.svg);
+                background-repeat: no-repeat;
+                background-position: right;                   background-size: 18px;
+                transform: translateX(-23px);
+                
+            }
+        }
+    }
+    .add-display{
+        top: -950px;
+        position: absolute;
+        overflow: hidden;
+    }
+    .transition{
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+
+};
+.pc-menu{
+    display: none;
+}
+};
+    
+
+//Tablet +
+@media only screen and (min-width: 768px)
+{ 
+    .mobile-menu
+    {
+        display: none;
+    }
+
+    .pc-menu
+    {
+        display: flex;
+        background-color: #000000ee;
+        justify-content: center;
+        height: 44px;
+        a
+        {
+            color: #CCCCCC;
+        }
+        ul
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 768px;
+            &:first-child
+            {
+                padding-left: 16px;
+            }
+            &:last-child
+            {
+                padding-right: 24px;
+            }
+        }
+        .pc-logo
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            svg
+            {
+                background-image: url(https://www.apple.com/ac/globalnav/6/tr_TR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__cxwwnrj0urau_small.svg);
+                background-repeat: no-repeat;
+                background-size: 18px;
+                background-position: center center;
+                width: 18px;
+                height: 44px;
+                z-index: 99;
+            }
+        }
+        .search-icon
+        {
+            svg
+            {
+                background-image: url(https://www.apple.com/ac/globalnav/6/en_US/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_search_image__fca9mfoh8a2q_large.svg);
+                background-repeat: no-repeat;
+                background-position: center 0; 
+                background-size: 18px;
+                width: 18px;
+                height: 40px;
+            }
+        }
+        .shop-a
+        {
+            svg
+            {
+                background-image: url(https://www.apple.com/ac/globalnav/6/tr_TR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_bag_image__bmix8075eg4i_small.svg);
+                background-repeat: no-repeat;
+                background-position: center 0; 
+                background-size: 18px;
+                width: 18px;
+                height: 44px;
+                
+            }
+        }
+    }
+    .search-menu
+{   
+    top: 0;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    div
+    {
+        position: relative;
+        span
+        {
+            position: absolute;
+            color: white;
+            top: 30%;
+        }
+    }
+
+    input
+    {
+
+        width: 45vw;
+        height: 44px;
+        border: 0;
+        background-color: #000000ee;
+        padding: 0 30px;
+        &::placeholder
+        {
+            
+            color: white;            
+            font-size: 18px;
+            background-image: url(https://www.apple.com/ac/globalnav/6/tr_TR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_search_image__fca9mfoh8a2q_small.svg);
+            background-repeat: no-repeat;
+            background-size: 18px;
+            background-position: 7px center;
+        }
+    }
+} 
+.add-search
+    {
+        
+        right: -100vw;
+    } 
+.transition{
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+    main
+    {
+        .iphone13pro
+        {
+
+            height: 68.4vh;
+
+            h1
+            {
+                font-size: 56px;
+                font-weight: 600;
+                letter-spacing: -2px;
+                margin-top: 10px;
+            }
+            h2
+            {
+                font-size: 28px;
+                font-weight: 500;
+                margin-top: 1px;
+                letter-spacing: -2px;
+            }
+            span
+            {
+                margin-top: 24px;
+                font-size: 18px;
+                color: #86868B;
+            }
+            .cta{
+                height: 85%;
+            }
+            .cta-link
+            {
+                margin: 16px 0;
+                padding: 0 45px;
+                a
+                {
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #0066CC !important;
+                    &:hover
+                    {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .iphone13
+        {
+
+            height: 68.4vh;
+
+            h1
+            {
+                color: #F5F5F7;
+                font-size: 56px;
+                font-weight: 600;
+                letter-spacing: -2px;
+                margin-top: 10px;
+            }
+            h2
+            {
+                color: #FEC2EB;
+                font-size: 28px;
+                font-weight: 500;
+                margin-top: 1px;
+                letter-spacing: -.5px;
+            }
+            span
+            {
+                margin-top: 24px;
+                font-size: 18px;
+                color: #86868B;
+            }
+            .cta{
+                height: 85%;
+            }
+            .cta-link
+            {
+                margin-top: 16px;
+                a
+                {
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #2997FF !important;
+                    &:hover
+                    {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .applewatch{
+
+            height: 68.4vh;
+
+            h2
+            {
+                margin-top: 20px;
+                font-size: 26px;
+                font-weight: 500;
+            }
+            span
+            {
+                margin-top: 24px;
+                font-size: 18px;
+                color: #86868B;
+            }
+            .cta{
+                height: 85%;
+            }
+            .cta-link
+            {
+                margin-top: 16px;
+                a
+                {
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #0066CC;
+                    &:hover
+                    {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .promos
+        {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: "fitness ipad"
+            "imac airtag"
+            "card tv" ;
+            grid-gap: 12px;
+            margin: 12px;
+            img
+                {
+                    width: 15vh;
+                    margin-bottom: 10px;
+                }
+                .cta{
+                    h1
+                    {
+                        font-size: 28px;
+                        margin-bottom: 10px;
+                    }
+                }
+                .cta-link
+                {
+                    align-items: baseline;
+                    margin-top: 10px;
+                }
+                .cta-group
+                {
+                    h2
+                    {
+                        font-size: 2vh;
+                        font-weight: 100 !important;
+                        letter-spacing: .5px;
+                        
+                    }
+                    sup
+                    {
+                        font-size: 1.3vh;
+                    }
+                }
+            .fitness
+            {
+                grid-area: fitness;
+                height: 51.5vh;
+            }
+            .ipadMini
+            {
+                grid-area: ipad;
+                height: 51.5vh;
+            }
+            .iMac
+            {
+                grid-area: imac;
+                height: 51.5vh;
+            }
+            .airTag
+            {
+                grid-area: airtag;
+                height: 51.5vh;
+                img
+                {
+                    width: 10vh;
+                }
+
+            }
+            .card
+            {
+                grid-area: card;
+                height: 51.5vh;
+                img
+                {
+                    width: 10vh;
+                }
+            }
+            .tv
+            {
+                grid-area: tv;
+                height: 51.5vh;
+                .cta
+                {
+                    img
+                    {
+                        width: 8vh;
+                    }
+                }
+                .cta-group
+                {
+                    img
+                    {
+                        width: 20vh;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+//Laptop +
+@media only screen and (min-width: 1024px)
+{ 
+    .pc-menu
+    {
+        ul
+        {
+            width: 1024px;
+        }
+    }
+    main
+    {
+        .iphone13pro
+        {
+            height: 77.5vh !important;
+        }
+        .iphone13
+        {
+            height: 77.5vh !important;
+        }
+        .applewatch
+        {
+            height: 77.5vh !important;
+        }
+        .promos
+        {
+            a
+            {
+                font-size: 16px;
+            }
+            .fitness
+            {
+                height: 62vh !important;
+                img
+                {
+                    width: 20vh;
+                }
+                .cta-link
+                {
+                    padding: 0 30px;
+                }
+            }
+            .ipadMini
+            {
+                height: 62vh !important;
+            }
+            .iMac
+            {
+                height: 62vh !important;
+                h1
+                {
+                    font-size: 40px;
+                }
+                .cta-link
+                {
+                    a
+                    {
+                        margin: 10px;
+                    } 
+                }
+            }
+            .airTag
+            {
+                height: 62vh !important;
+                img
+                {
+                    width: 13vh;
+                }
+            }
+            .card
+            {
+                height: 62vh !important;
+                img
+                {
+                    width: 13vh;
+                }
+            }
+            .tv
+            {
+                height: 62vh !important;
+            }
+        }
+    }
+}

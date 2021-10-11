@@ -1,0 +1,28 @@
+*, p, h1, h2, h3, h4, h5, h6, a, li, ul{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    box-sizing: border-box;
+    text-decoration-style: none;
+    text-decoration: none;
+    list-style: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body
+{
+    overflow-x: hidden;
+}
+
+
+@import '../STYLE/SCSS/_responsive.scss', '../STYLE/SCSS/color', '../STYLE/SCSS/component' ;
+
+
+.mobile-menu, .pc-menu{
+    position: sticky;
+    top: 0;
+    
+    
+}

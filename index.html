@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Clone</title>
+    <link rel="stylesheet" href="/STYLE/sytle.css">
+</head>
+<body>
+    <div class="mobile-menu">
+        <header class="">
+            <div class="menu transition">
+                <div class="header">
+                    <div class="mega-menu-open" onclick="menuOpen()">
+                        <div class="first">
+                            _
+                        </div>
+                        <div class="second">
+                            _
+                        </div>
+                    </div>
+                    <div class="menu-logo">
+                        <svg></svg>
+                    </div>
+                    <div class="shop">
+                        <svg></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="mega-menu add-display transition">
+                <header>
+                    <div class="header">
+                        <div class="mega-menu-close" onclick="menuOpen()">
+                            <span class="first">
+                                /
+                            </span>
+                            <span class="second">
+                                /
+                            </span>
+                        </div>
+                        <div class="menu-logo">
+                            
+                        </div>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="apple.com/tr'de arayın">
+                    </div>
+                </header>
+                <main>
+                    <div>
+                        <ul>
+                            <li><a href="">Store</a></li>
+                            <li><a href="">Mac</a></li>
+                            <li><a href="">iPad</a></li>
+                            <li><a href="">iPhone</a></li>
+                            <li><a href="">Watch</a></li>
+                            <li><a href="">TV</a></li>
+                            <li><a href="">Music</a></li>
+                            <li><a href="">Destek</a></li>
+                        </ul>
+                    </div>
+                </main>
+            </div>
+        </header>
+    </div>
+    <div class="pc-menu">
+        <ul>
+            <li class="logo-li">
+                <a href="" class="pc-logo">
+                    <svg></svg>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    Store
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    Mac
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    iPad
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    iPhone
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    Watch
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    TV
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    Music
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    Support
+                </a>
+            </li>
+            <li >
+                <a href=""  class="search-icon">
+                    <svg onclick="searchMenu1(event)"></svg>
+                </a>
+            </li>
+            <li>
+                <a href="" class="shop-a">
+                    <svg ></svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="search-menu add-search transition">
+        <input type="textbox" placeholder="Search apple.com">
+        <div><span onclick="searchMenu1(event)">X</span></div>
+    </div>
+        
+    <main>
+        <section class="reklam">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam cupiditate magni debitis quam suscipit, inventore soluta nulla dignissimos, necessitatibus nam optio molestias harum doloribus amet, mollitia perferendis. Ad, ducimus voluptatum!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam cupiditate magni debitis quam suscipit, inventore soluta nulla dignissimos, necessitatibus nam optio molestias harum doloribus amet, mollitia perferendis. Ad, ducimus voluptatum!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam cupiditate magni debitis quam suscipit, inventore soluta nulla dignissimos, necessitatibus nam optio molestias harum  
+            </p>
+        </section>
+        <section>
+            <div class="iphone13pro">
+                <div class="cta">
+                    <h1>
+                        iPhone 13 Pro
+                    </h1>
+                    <div class="cta-group">
+                        <h2>
+                            Oh. So. Pro.
+                        </h2>
+                        <div class="cta-link">
+                            <a href="">
+                                Learn more >
+                            </a>
+                            <a href="">
+                                Buy >
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="iphone13">
+                <div class="cta">
+                    <h1>
+                        iPhone 13
+                    </h1>
+                    <div class="cta-group">
+                        <h2>
+                            Your new superpower.
+                        </h2>
+                        <div class="cta-link">
+                            <a href="">
+                                Learn more >
+                            </a>
+                            <a href="">
+                                Buy >
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="applewatch">
+                <div class="cta">
+                    <img class="logo" src="https://www.apple.com/v/home/af/images/logos/watch-series-7/watch_logo_lte__sd64ksudvayy_largetall.png" alt="">
+                    <div class="cta-group">
+                        <h2>
+                            Full screen ahead.
+                        </h2>
+                        <span>
+                           Available starting 10.15
+                        </span>
+                        <div class="cta-link">
+                            <a href="">
+                                Learn more >
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="promos">
+            <div class="fitness">
+                <div class="cta">
+                    <img class="logo" src="https://www.apple.com/v/home/af/images/logos/apple-fitness-plus/logo__dcojfwkzna2q_large_2x.png" alt="">
+                    <div class="cta-group">
+                        <h2>
+                            Now with Pilates, Group Workouts
+                            <sup>
+                                1
+                            </sup>
+                            ,
+                            <br>
+                            and guided Meditation.
+                        </h2>
+                        <div class="cta-link">
+                            <a href="">
+                                Learn more >
+                            </a>
+                            <a href="">
+                                Try it free <sup>2</sup> >
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ipadMini">
+                <div class="cta">
+                    <img class="logo" src="https://www.apple.com/v/home/af/images/logos/ipad-mini/promo_logo_ipad_mini__n5nqff6gq8yu_large_2x.png" alt="">
+                    <div class="cta-group">
+                        <h2>
+                            Mega power. Mini sized.
+                        </h2>
+                        <div class="cta-link">
+                            <a href="">
+                                Learn more >
+                            </a>
+                            <a href="">
+                                Buy >
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="iMac">
+                <div class="cta">
+                    <h1>iMac</h1>
+                    <div class="cta-group">
+                        <h2>
+                            Say hello.
+                        </h2>
+                        <div class="cta-link">
+                            <a href="">
+                                Learn more >
+                            </a>
+                            <a href="">
+                                Buy >
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="airTag">
+                <div class="cta">
+                    <img class="logo" src="https://www.apple.com/v/home/af/images/logos/airtag/promo_logo_airtag__c5t9ubtmpuqa_large_2x.png" alt="">
+                    <div class="cta-group">
+                        <h2>
+                            Lose your knack for losing things.
+                        </h2>
+                        <div class="cta-link">
+                            <a href="">
+                                Learn more >
+                            </a>
+                            <a href="">
+                                Buy >
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cta">
+                    <img class="logo" src="https://www.apple.com/v/home/af/images/logos/apple-card/logo__dcojfwkzna2q_large_2x.png" alt="">
+                    <div class="cta-group">
+                        <h2>
+                            Get up to 3% Daily Cash back <br> with every purchase.
+                        </h2>
+
+                        <div class="cta-link">
+                            <a href="">
+                                Learn more >
+                            </a>
+                            <a href="">
+                                Apply now >
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tv">
+                <div class="cta">
+                    <img class="logo" src="https://www.apple.com/v/home/af/images/logos/tv-plus/logo_light__cfvl40z2nzau_large_2x.png" alt="">
+                    <div class="cta-group">
+
+                        <img src="https://www.apple.com/v/home/af/images/logos/tv-plus-blush/logo_promo_blush__bg3dyy1v8j4y_large_2x.png" alt="">
+
+                        <h2>
+                            Inspired by an epic true love story.
+                        </h2>
+                        
+                        <div class="cta-link">
+                            <a href="">
+                                Stream now >
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+
+    </footer>
+<script src="app.js"></script>
+</body>
+</html>
