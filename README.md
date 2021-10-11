@@ -11,6 +11,6 @@ I also made mobile menu and pc menu effects.
 * PC-Tablet header Normal
 <img src="pc-header-ss-1.jpg">
 * PC-Tablet header Search Button Press
-<img src="pc-header-ss-1.jpg">
+<img src="pc-header-ss-2.jpg">
 * Content
 <img src="ss.jpg">
